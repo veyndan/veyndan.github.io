@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 480px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 8px;
+}
+
+hr {
+    width: 48px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+    height: 2px;
+}
+
+p {
+    font-weight: 300;
+    padding: 8px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+ul {
+    margin: 8px;
+    text-align: center;
+}
+
+li {
+    color: rgba(0, 0, 0, 0.87);
+    margin: 8px;
+    display: inline;
+}
+
+a {
+    transition: all .2s ease-in-out;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.38);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.87);
+}
