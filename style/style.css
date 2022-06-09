@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 #container {
