@@ -1,5 +1,26 @@
 {
+  "name": "veyndan.github.io",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.2"
+  },
+  "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.34",
     "awsm.css": "^3.0.7",
     "modern-normalize": "^1.1.0"
   }
