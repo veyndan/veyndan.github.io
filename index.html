@@ -8,33 +8,57 @@
 
     <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm.min.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
     <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm_theme_black.min.css" media="(prefers-color-scheme: dark)">
+
+    <script>
+        customElements.define('my-paragraph',
+            class extends HTMLElement {
+                constructor() {
+                    super();
+                    let template = document.getElementById('my-paragraph');
+                    const shadowRoot = this.attachShadow({mode: 'open'});
+                    shadowRoot.appendChild(template.content.cloneNode(true));
+                }
+            }
+        );
+    </script>
 </head>
 <body>
 
-<header>
-    <h1>Veyndan Stuart</h1> <!-- Or just "Veyndan" -->
-    <p>My little corner of the Internet.</p>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li><a href="/projects">Projects</a></li>
-            <!--Note dump, brainstorm, ideas, musings, thoughts, brain dump, data dump-->
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/ideas">Ideas</a></li>
-        </ul>
-    </nav>
-</header>
+<template id="my-paragraph">
+    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm.min.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm_theme_black.min.css" media="(prefers-color-scheme: dark)">
 
-<main>
-    <article>
-        <p>Hi! I'm Veyndan and welcome to my website.</p>
-        <img src="profile.jpg">
-    </article>
-</main>
+    <header>
+        <h1>Veyndan Stuart</h1> <!-- Or just "Veyndan" -->
+        <p>My little corner of the Internet.</p>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="/projects">Projects</a></li>
+                <!--Note dump, brainstorm, ideas, musings, thoughts, brain dump, data dump-->
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/ideas">Ideas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<footer>
-    <p>Find me on <a href="https://twitter.com/veyndan">Twitter</a> and <a href="https://github.com/veyndan">GitHub</a>. To get in touch, here's my <a href="mailto:veyndan@gmail.com">email</a>.</p>
-</footer>
+    <main>
+        <slot name="my-text">asdf</slot>
+    </main>
+
+    <footer>
+        <p>Find me on <a href="https://twitter.com/veyndan">Twitter</a> and <a href="https://github.com/veyndan">GitHub</a>. To get in touch, here's my <a href="mailto:veyndan@gmail.com">email</a>.</p>
+    </footer>
+</template>
+
+<my-paragraph>
+    <span slot="my-text">
+        <article>
+            <p>Hi! I'm Veyndan and welcome to my website.</p>
+            <img src="profile.jpg">
+        </article>
+    </span>
+</my-paragraph>
 
 </body>
 </html>
