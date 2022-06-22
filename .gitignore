@@ -5,4 +5,8 @@
 node_modules/*
 !node_modules/*/
 node_modules/*/*
+!node_modules/*/*/
+node_modules/*/*/*
+!node_modules/awsm.css/dist/awsm.min.css
+!node_modules/awsm.css/dist/awsm_theme_black.min.css
 !node_modules/modern-normalize/modern-normalize.css
