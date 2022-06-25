@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "awsm.css": "^3.0.7",
     "modern-normalize": "^1.1.0"
   }
 }
