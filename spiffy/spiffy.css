@@ -1,0 +1,92 @@
+:root {
+    --color: hsl(0 0% 10%);
+    --background-color: white;
+}
+
+html {
+    line-height: 1.4;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+body {
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+    padding: 0.67rem 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1.25em 0 .85em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 2em 0 1.6em 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin: 1.2em 0 1em;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.5em 0 .1em 0;
+}
+
+h5 {
+    font-size: .75em;
+    margin: 2em 0 .6em 0;
+}
+
+h6 {
+    font-size: .75em;
+    font-weight: inherit;
+    margin: 2em 0 .6em 0;
+}
+
+p {
+    margin: 0 0 1.6em 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main + footer {
+    margin-top: 4rem;
+}
+
+footer {
+    text-align: center;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+address {
+    font-style: normal;
+}
+
+@media (min-width: 40rem) {
+    body {
+        font-size: large;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: snow;
+        --background-color: black;
+    }
+
+    body a {
+        color: #809fff;
+    }
+}
