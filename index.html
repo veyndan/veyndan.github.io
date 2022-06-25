@@ -6,12 +6,67 @@
     <title>Veyndan</title>
     <meta name="description" content="Hi I'm Veyndan Stuart.">
 
-    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm.min.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
-    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm_theme_black.min.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 
     <style>
+        :root {
+            --color: hsl(0 0% 10%);
+            --background-color: white;
+        }
+
+        html {
+            line-height: 1.4;
+            background-color: var(--background-color);
+            color: var(--color);
+        }
+
+        body {
+            width: 100%;
+            max-width: 40rem;
+            margin-inline: auto;
+            padding: 0.67rem 1.4rem;
+        }
+
+        h1 {
+            font-size: 1.97em;
+        }
+
+        h3 {
+            font-size: 1.41em;
+            margin-top: -0.15em;
+        }
+
+        h3 + p {
+            margin-top: -0.8rem;
+        }
+
+        p {
+            font-size: large;
+        }
+
         img {
+            width: 100%;
             height: auto;
+        }
+
+        main + footer {
+            margin-top: 4.5rem;
+        }
+
+        footer p {
+            text-align: center;
+            font-size: .8rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color: snow;
+                --background-color: black;
+            }
+
+            body a {
+                color: #809fff;
+            }
         }
     </style>
 </head>
@@ -19,7 +74,7 @@
 
 <main>
     <article>
-        <h2>Hi I'm Veyndan Stuart.</h2>
+        <h1>Hi I'm Veyndan Stuart.</h1>
         <h3>I'm a maker of unfinished things, like this website.</h3>
         <p>
             Here's a silly picture of me in the meantime.
