@@ -28,20 +28,17 @@
         }
 
         h1 {
-            font-size: 1.97em;
+            font-size: 1.8em;
+            margin-bottom: 0;
         }
 
         h3 {
-            font-size: 1.41em;
-            margin-top: -0.15em;
+            margin-top: 1em;
+            margin-bottom: 0;
         }
 
         h3 + p {
-            margin-top: -0.8rem;
-        }
-
-        p {
-            font-size: large;
+            margin-top: 0.8em;
         }
 
         img {
@@ -56,6 +53,12 @@
         footer p {
             text-align: center;
             font-size: .8rem;
+        }
+
+        @media (min-width: 40rem) {
+            body {
+                font-size: large;
+            }
         }
 
         @media (prefers-color-scheme: dark) {
