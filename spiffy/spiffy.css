@@ -1,6 +1,7 @@
 :root {
     --color: hsl(0 0% 10%);
     --background-color: white;
+    --dinkus: '* * *';
 }
 
 html {
@@ -53,6 +54,17 @@ h6 {
 
 p {
     margin: 0 0 1.6em 0;
+}
+
+hr {
+    border: 0;
+    text-align: center;
+    height: inherit;
+    margin: 0 0 1.6em;
+}
+
+hr:after {
+    content: var(--dinkus);
 }
 
 img {
