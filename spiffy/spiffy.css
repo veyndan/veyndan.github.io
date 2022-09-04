@@ -79,6 +79,22 @@ header p {
     margin: 0;
 }
 
+header nav a:any-link {
+    text-decoration: underline;
+    color: revert;
+}
+
+header nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-inline: 0;
+}
+
+header nav > ul > li:after {
+    content: "\00a0\00a0\00a0";
+}
+
 main + footer {
     margin-block: 4rem;
 }
