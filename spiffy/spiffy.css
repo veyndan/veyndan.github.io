@@ -13,7 +13,7 @@ body {
     width: 100%;
     max-width: 40rem;
     margin-inline: auto;
-    padding: 0.67rem 1.4rem;
+    padding: 2.4rem 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2em;
-    margin: 1.25em 0 .85em 0;
+    margin: .5em 0 .85em 0;
 }
 
 h2 {
