@@ -100,6 +100,25 @@ header p {
     margin: 0;
 }
 
+header {
+    display: inline-block;
+    margin-bottom: .75em;
+}
+
+header a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0 0 .2em 0;
+}
+
+header p {
+    margin: 0;
+}
+
 main + footer {
     margin-block: 4rem;
 }
