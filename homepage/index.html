@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="../spiffy/spiffy.css">
+</head>
+
+<style>
+    html {
+        background-color: transparent;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(72px , 1fr));
+        gap: 8px;
+        padding: 16px;
+        list-style-type: none;
+        /*background: green;*/
+    }
+
+    li {
+        /*background: orange;*/
+    }
+
+    li > a {
+        aspect-ratio: 1;
+        text-align: center;
+        display: block;
+        text-underline: none;
+        text-decoration: none;
+        /*background: blue;*/
+    }
+
+    li > a > img {
+        width: auto;
+        height: 48px;
+        /*background: pink;*/
+    }
+
+    li > a > span {
+        font-size: .8em;
+    }
+</style>
+
+<body>
+<!-- Deep link to my launcher, then it can send off an intent to the requested app. -->
+<main>
+    <ul>
+        <li>
+            <a href="https://chat.whatsapp.com">
+                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.whatsapp.com/&size=48" alt=""/>
+                <span>Clock</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://chat.whatsapp.com">
+                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.whatsapp.com/&size=48" alt=""/>
+                <span>WhatsApp</span>
+            </a>
+        </li>
+    </ul>
+</main>
+
+<script type="text/javascript">
+    (function () {
+        var ul = document.getElementsByTagName("ul")[0]
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(Android.getFromAndroid()));
+        ul.appendChild(li);
+        console.log(ul)
+        console.log(li)
+        var myVar = Android.getFromAndroid();
+        console.log(myVar);
+    })();
+</script>
+
+</body>
+</html>
