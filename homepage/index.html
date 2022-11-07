@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="../spiffy/spiffy.css">
 </head>
 
 <style>
     html {
-        background-color: transparent;
+        /*background: white;*/
     }
 
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(72px , 1fr));
-        gap: 8px;
-        padding: 16px;
+        /*place-items: center;*/
+        gap: 37px 5px;
+        padding: 0 24px;
         list-style-type: none;
+        /*margin-top: 98px;*/
         /*background: green;*/
     }
 
     li {
-        /*background: orange;*/
+        aspect-ratio: 1;
     }
 
     li > a {
-        aspect-ratio: 1;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 12px;
+        /*place-items: center;*/
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
         text-align: center;
-        display: block;
         text-underline: none;
         text-decoration: none;
         /*background: blue;*/
@@ -37,7 +45,7 @@
 
     li > a > img {
         width: auto;
-        height: 48px;
+        height: 56px;
         /*background: pink;*/
     }
 
@@ -49,32 +57,35 @@
 <body>
 <!-- Deep link to my launcher, then it can send off an intent to the requested app. -->
 <main>
+<!--&lt;!&ndash;    Doesn't work as the app needs to support category_browsable to open from browser.&ndash;&gt;-->
+<!--    <a href="intent:#Intent;package=com.google.android.deskclock;category=android.intent.category.LAUNCHER;end">call someone</a>-->
     <ul>
-        <li>
-            <a href="https://chat.whatsapp.com">
-                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.whatsapp.com/&size=48" alt=""/>
-                <span>Clock</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://chat.whatsapp.com">
-                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.whatsapp.com/&size=48" alt=""/>
-                <span>WhatsApp</span>
-            </a>
-        </li>
     </ul>
 </main>
 
 <script type="text/javascript">
     (function () {
-        var ul = document.getElementsByTagName("ul")[0]
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(Android.getFromAndroid()));
-        ul.appendChild(li);
-        console.log(ul)
-        console.log(li)
-        var myVar = Android.getFromAndroid();
-        console.log(myVar);
+        fetch("http://0.0.0.0:13276/")
+            .then(response => response.json())
+            .then(json => {
+                const ul = document.getElementsByTagName("ul")[0];
+                json.forEach(app => {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a")
+                    a.href = app["packageNameUrl"]
+                    const img = document.createElement("img")
+                    img.src = app["iconUrl"]
+                    a.appendChild(img)
+                    const span = document.createElement("span")
+                    span.innerText = app["label"]
+                    a.appendChild(span);
+                    li.appendChild(a)
+                    ul.appendChild(li);
+                })
+            })
+            .catch(reason => {
+                alert(reason)
+            })
     })();
 </script>
 
