@@ -29,6 +29,18 @@ main img, main table {
     max-width: 48rem;
 }
 
+main * {
+    margin-inline: auto;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6, main p, main ol {
+    max-width: 40rem;
+}
+
+main img, main table {
+    max-width: 48rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
@@ -84,39 +96,10 @@ ul {
 header {
     display: inline-block;
     margin-bottom: .75em;
-}
-
-header a:any-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-header h1 {
-    font-size: 1.5em;
-    margin: 0 0 .2em 0;
-}
-
-header p {
-    margin: 0;
-}
-
-header {
-    display: inline-block;
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
     margin-bottom: .75em;
-}
-
-header a:any-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-header h1 {
-    font-size: 1.5em;
-    margin: 0 0 .2em 0;
-}
-
-header p {
-    margin: 0;
 }
 
 header nav a:any-link {
@@ -170,6 +153,20 @@ address {
 
 .underline {
     text-decoration: underline .2rem;
+}
+
+/* I just want the table to be horizontally scrollable on smaller devices, and not the whole page. */
+table {
+    display: block;
+    width: 100%;
+    min-width: 40rem;
+    border-spacing: 32px 4px;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+td.number {
+    text-align: end;
 }
 
 @media (min-width: 40rem) {

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veyndan</title>
+    <meta name="description" content="Hi I'm Veyndan Stuart.">
+
+    <link rel="stylesheet" href="../../node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="../../spiffy/spiffy.css">
+</head>
+<body>
+
+<header>
+    <a href="../../index.html">
+        <h1>Veyndan</h1>
+        <p>My little corner of the Internet.</p>
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../musings/index.html">Musings</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h1>German Noun Genders</h1>
+        <p>
+            German nouns are gendered, so they can be feminine, masculine, or neuter.
+            As an extremely novice German speaker,
+            I often find remembering the word easier than which gender it is.
+        </p>
+        <p>
+            I'd like some rules to remember in order to increase the likelihood of guessing the correct gender for a word.
+            Rules found <a href="">around</a> <a href="">the</a> <a href="">web</a> are great,
+            yet I have no idea how accurate they are.
+        </p>
+        <p>
+<!--            made up to created-->
+            I've collected (and made up) several rules below,
+            all of which have been tested against Wikidata to deduce their accuracy.
+            I hope they can help you better remember the genders of nouns,
+            and know that the rules you're learning are actually based in fact!
+        </p>
+        <table>
+            <tr>
+                <th>Rule</th>
+                <th>Gender</th>
+                <th>Total Words</th>
+                <th>Total Words Where Rule Is Correct</th>
+                <th>Percentage Correct</th>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22ant%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with -ant</a></td>
+                <td>Masculine</td>
+                <td class="number">36</td>
+                <td class="number">32</td>
+                <td class="number">89%</td>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22ich%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with -ich</a></td>
+                <td>Masculine</td>
+                <td class="number">64</td>
+                <td class="number">57</td>
+                <td class="number">89%</td>
+            </tr>
+            <tr>
+                <!-- Remove numbers in query -->
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22ig%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with -ig and isn't a number</a></td>
+                <td>Masculine</td>
+                <td class="number">33</td>
+                <td class="number">33</td>
+                <td class="number">100%</td>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22ismus%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with …ismus</a></td>
+                <td>Masculine</td>
+                <td class="number">55</td>
+                <td class="number">55</td>
+                <td class="number">100%</td>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22ling%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with …ling</a></td>
+                <td>Masculine</td>
+                <td class="number">28</td>
+                <td class="number">24</td>
+                <td class="number">86%</td>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22or%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with …or</a></td>
+                <td>Masculine</td>
+                <td class="number">118</td>
+                <td class="number">111</td>
+                <td class="number">94%</td>
+            </tr>
+            <tr>
+                <td><a href="https://query.wikidata.org/#SELECT%20%3FdeSingularNominativeLexicalEntry%20%3FdeSingularNominative%20%3FdeSingularNominativeGrammaticalGenderLabel%20WHERE%20%7B%0A%20%20%3FdeSingularNominativeLexicalEntry%20wikibase%3Alemma%20%3FdeSingularNominative%3B%0A%20%20%20%20dct%3Alanguage%20wd%3AQ188%3B%0A%20%20%20%20wikibase%3AlexicalCategory%20wd%3AQ1084%3B%0A%20%20%20%20wdt%3AP5185%20%3FdeSingularNominativeGrammaticalGender%3B%0A%20%20%20%20rdf%3Atype%20ontolex%3ALexicalEntry.%0A%20%20FILTER%28STRENDS%28%3FdeSingularNominative%2C%20%22us%22%29%29%0A%20%20FILTER%28%21STRENDS%28%3FdeSingularNominative%2C%20%22ismus%22%29%29%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%20%7D%0A%7D">ends with …us but doesn't end with …ismus</a></td>
+                <td>Masculine</td>
+                <td class="number">124</td>
+                <td class="number">56</td>
+                <td class="number">45%</td>
+            </tr>
+        </table>
+        <p>Hope that helped!</p>
+    </article>
+</main>
+
+<footer>
+    <address>
+        Find me on <a href="https://twitter.com/veyndan">Twitter</a> and <a href="https://github.com/veyndan">GitHub</a>.
+        To get in touch, here's my <a href="mailto:veyndan@gmail.com">email</a>.
+    </address>
+</footer>
+
+</body>
+</html>
