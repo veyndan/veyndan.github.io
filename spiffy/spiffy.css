@@ -25,6 +25,20 @@ main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, main li {
     padding-inline: 1.4rem;
 }
 
+main ul {
+    list-style: inside;
+    /*padding: 0;*/
+}
+
+[role="doc-noteref"] {
+    font-size: .75rem;
+    vertical-align: super;
+}
+
+[role="doc-footnote"] {
+    font-size: .8rem;
+}
+
 main img, main table {
     max-width: 48rem;
 }
@@ -81,6 +95,43 @@ ul {
     list-style: inside;
 }
 
+header {
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+    margin-bottom: .75em;
+}
+
+header a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0 0 .2em 0;
+}
+
+header p {
+    margin: 0;
+}
+
+header nav a:any-link {
+    text-decoration: underline;
+    color: revert;
+}
+
+header nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-inline: 0;
+}
+
+header nav > ul > li:after {
+    content: "\00a0\00a0\00a0";
+}
+
 main + footer {
     margin-block: 4rem;
 }
@@ -96,7 +147,7 @@ address {
 }
 
 .underline {
-    text-decoration: underline .2rem;
+    /*text-decoration: underline .2rem;*/
 }
 
 @media (min-width: 40rem) {
@@ -114,4 +165,51 @@ address {
     body a {
         color: #809fff;
     }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); opacity: .2; }
+    50%  { transform: rotate(180deg); opacity: 1; }
+    to   { transform: rotate(360deg); opacity: .2; }
+}
+
+.soundcite-loaded {
+    border-radius: 8px;
+    padding: 0 .8rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.soundcite-loaded:before {
+    display: inline-block;
+    content: "";
+    vertical-align: 4%;
+}
+
+.soundcite-loading:before {
+    margin-right: .5em;
+    font-size: .9em;
+    position: relative;
+    top: -.05em;
+    height: .75em;
+    width: .75em;
+    border: 2px solid #000;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.soundcite-play:before {
+    font-size: 1.4rem;
+    position: relative;
+    border: .5em solid transparent;
+    border-left: .75em solid var(--color);
+}
+
+.soundcite-pause:before {
+    font-size: 1.4rem;
+    position: relative;
+    height: 1em;
+    border-left: .75em double var(--color);
+    border-right: .5em solid transparent;
 }
