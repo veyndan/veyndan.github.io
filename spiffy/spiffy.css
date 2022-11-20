@@ -108,7 +108,7 @@ address {
 @media (prefers-color-scheme: dark) {
     :root {
         --color: snow;
-        --background-color: black;
+        --background-color: hsl(0 0% 10%);
     }
 
     body a {
