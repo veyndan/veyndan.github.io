@@ -16,11 +16,11 @@ body {
     padding-block: 2.4rem;
 }
 
-main * {
+main *, footer * {
     margin-inline: auto;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, main li {
+main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, main li, footer address {
     max-width: 40rem;
     padding-inline: 1.4rem;
 }
