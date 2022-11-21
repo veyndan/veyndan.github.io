@@ -14,19 +14,23 @@ body {
     flex-direction: column;
     width: 100%;
     padding-block: 2.4rem;
-}
-
-main *, footer * {
-    margin-inline: auto;
+    align-items: center;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, main li, footer address {
+    width: 100%;
     max-width: 40rem;
     padding-inline: 1.4rem;
 }
 
 main img, main table {
     max-width: 48rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
