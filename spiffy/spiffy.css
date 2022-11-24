@@ -17,20 +17,20 @@ body {
     align-items: center;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, footer address {
-    width: 100%;
-    max-width: 40rem;
-    padding-inline: 1.4rem;
-}
-
-main img, main table {
-    max-width: 48rem;
-}
-
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    max-width: 48rem;
+    grid-template-columns: 1fr min(53ch, calc(100% - 2.8rem)) 1fr;
+    grid-column-gap: 1.4rem;
+}
+
+article > *, footer > * {
+    grid-column: 2;
+}
+
+article > img, article > table {
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,8 +81,8 @@ img {
     margin-bottom: 2.4rem;
 }
 
-li {
-    margin-inline-start: 1.4rem;
+ul {
+    padding-inline-start: 1.4rem;
 }
 
 main + footer {
