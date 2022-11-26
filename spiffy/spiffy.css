@@ -19,7 +19,7 @@ body {
 
 article {
     display: grid;
-    max-width: 48rem;
+    max-inline-size: 48rem;
     grid-template-columns: 1fr min(53ch, calc(100% - 2.8rem)) 1fr;
     grid-column-gap: 1.4rem;
 }
@@ -39,46 +39,40 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2em;
-    margin-top: .5em;
-    margin-bottom: .85em;
+    margin-block: .5em .85em;
 }
 
 h2 {
     font-size: 1.5em;
-    margin-top: 2em;
+    margin-block-start: 2em;
 }
 
 h3 {
     font-size: 1.25em;
-    margin-top: 1.2em;
-    margin-bottom: 1em;
+    margin-block: 1.2em 1em;
 }
 
 h4 {
     font-size: 1em;
-    margin-top: 1.5em;
-    margin-bottom: .1em;
+    margin-block: 1.5em .1em;
 }
 
 h5 {
     font-size: .75em;
-    margin-top: 2em;
-    margin-bottom: .6em;
+    margin-block: 2em .6em;
 }
 
 h6 {
     font-size: .75em;
     font-weight: inherit;
-    margin-top: 2em;
-    margin-bottom: .6em;
+    margin-block: 2em .6em;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 2.4rem;
-    margin-bottom: 2.4rem;
+    object-fit: contain;
+    block-size: auto;
+    max-inline-size: 100%;
+    margin-block: 2.4rem;
 }
 
 ul {
