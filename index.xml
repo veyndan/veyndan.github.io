@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
-<rdf:RDF
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:schema="http://schema.org/">
+<root>
 
-	<schema:Person rdf:nodeId="me">
-		<schema:name rdf:datatype="https://schema.org/Text">Veyndan Stuart</schema:name>
-		<schema:givenName rdf:datatype="https://schema.org/Text">Veyndan</schema:givenName>
-		<schema:familyName rdf:datatype="https://schema.org/Text">Stuart</schema:familyName>
-		<schema:email rdf:datatype="https://schema.org/Text">veyndan@gmail.com</schema:email>
-	</schema:Person>
+	<rdf:RDF
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:schema="http://schema.org/">
 
-	<schema:CreativeWork>
-		<schema:name rdf:datatype="https://schema.org/Text">Flash</schema:name>
-		<schema:url rdf:datatype="https://schema.org/URL">https://github.com/veyndan/flash</schema:url>
-		<schema:description rdf:datatype="https://schema.org/Text">An Anki add-on that can autofill fields when creating notes.</schema:description>
-		<schema:author rdf:nodeID="me"/>
-	</schema:CreativeWork>
+		<schema:Person rdf:nodeId="me">
+			<schema:name rdf:datatype="https://schema.org/Text">Veyndan Stuart</schema:name>
+			<schema:givenName rdf:datatype="https://schema.org/Text">Veyndan</schema:givenName>
+			<schema:familyName rdf:datatype="https://schema.org/Text">Stuart</schema:familyName>
+			<schema:email rdf:datatype="https://schema.org/Text">veyndan@gmail.com</schema:email>
+		</schema:Person>
 
-	<schema:CreativeWork>
-		<schema:name rdf:datatype="https://schema.org/Text">Multiplatform Paging</schema:name>
-		<schema:url rdf:datatype="https://schema.org/URL">https://code.cash.app/announcing-multiplatform-paging</schema:url>
-		<schema:description rdf:datatype="https://schema.org/Text">A library that packages AndroidX Paging for Kotlin/Multiplatform.</schema:description>
-		<schema:author rdf:nodeID="me"/>
-	</schema:CreativeWork>
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Flash</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/veyndan/flash</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">An Anki add-on that can autofill fields when creating notes.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
 
-</rdf:RDF>
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Multiplatform Paging</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://code.cash.app/announcing-multiplatform-paging</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A library that packages AndroidX Paging for Kotlin/Multiplatform.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
+
+	</rdf:RDF>
+
+	<description>
+		Passionate programmer.
+		Film enthusiast.
+		Constantly lost in thought.
+	</description>
+
+</root>

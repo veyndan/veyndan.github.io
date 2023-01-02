@@ -5,8 +5,8 @@
 			<head>
 				<meta charset="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-				<title><xsl:value-of select="rdf:RDF/schema:Person/schema:givenName"/></title>
-				<meta name="description" content="Hi I'm {rdf:RDF/schema:Person/schema:name}."/>
+				<title><xsl:value-of select="root/rdf:RDF/schema:Person/schema:givenName"/></title>
+				<meta name="description" content="{root/description}"/>
 
 				<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/>
 				<link rel="stylesheet" href="spiffy/spiffy.css"/>
@@ -16,11 +16,9 @@
 				<main>
 					<article>
 						<h3>Ya found me.</h3>
-						<h1>Hi I'm <span class="underline">️<xsl:value-of select="rdf:RDF/schema:Person/schema:name"/></span>.</h1>
+						<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span>.</h1>
 						<p>
-							Passionate programmer.
-							Film enthusiast.
-							Constantly lost in thought.
+							<xsl:value-of select="root/description"/>
 						</p>
 						<img src="profile.webp" width="1613" height="1210" alt="Me wearing sunglasses and a hoodie like a cape."/> <!-- convert profile.heic -resize 40% profile.webp-->
 						<section>
@@ -30,7 +28,7 @@
 								from very dear to pretty dear.
 							</p>
 							<ul>
-								<xsl:for-each select="rdf:RDF/schema:CreativeWork">
+								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork">
 									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
 								</xsl:for-each>
 							</ul>
@@ -41,7 +39,7 @@
 				<footer>
 					<address>
 						Find me on <a href="https://twitter.com/veyndan">Twitter</a> and <a href="https://github.com/veyndan">GitHub</a>.
-						To get in touch, here's my <a href="mailto:{rdf:RDF/schema:Person/schema:email}">email</a>.
+						To get in touch, here's my <a href="mailto:{root/rdf:RDF/schema:Person/schema:email}">email</a>.
 					</address>
 				</footer>
 
