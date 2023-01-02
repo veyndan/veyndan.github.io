@@ -6,6 +6,7 @@
 				<meta charset="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<title><xsl:value-of select="root/rdf:RDF/schema:Person/schema:givenName"/></title>
+				<meta name="author" content="{root/rdf:RDF/schema:Person/schema:name}"/>
 				<meta name="description" content="{root/description}"/>
 
 				<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/>
