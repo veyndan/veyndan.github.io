@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://schema.org/" > 
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:reviewRating rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <j.0:review rdf:nodeID="A3"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">Goodfellas</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q42047</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">6</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <j.0:reviewRating rdf:nodeID="A6"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <j.0:reviewRating rdf:nodeID="A8"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <j.0:review rdf:nodeID="A7"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">Home Alone</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q105031</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <j.0:review rdf:nodeID="A11"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">Guillermo del Toro's Pinocchio</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q73895818</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <j.0:reviewRating rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">10</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <j.0:review rdf:nodeID="A5"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">The Godfather Part II</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q184768</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <j.0:review rdf:nodeID="A15"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">Goodfellas</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q42047</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">9</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <j.0:reviewRating rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">6</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <j.0:reviewRating rdf:nodeID="A16"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <j.0:reviewRating rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://schema.org/Review"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">9</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">7</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <j.0:review rdf:nodeID="A0"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">Bohemian Rhapsody</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q27894574</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <j.0:ratingValue rdf:datatype="http://schema.org/Number">3</j.0:ratingValue>
+    <j.0:bestRating rdf:datatype="http://schema.org/Number">10</j.0:bestRating>
+    <j.0:worstRating rdf:datatype="http://schema.org/Number">1</j.0:worstRating>
+    <rdf:type rdf:resource="http://schema.org/Rating"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <j.0:review rdf:nodeID="A18"/>
+    <j.0:name rdf:datatype="http://schema.org/Text">The Wolf of Wall Street</j.0:name>
+    <j.0:identifier rdf:datatype="http://schema.org/URL">http://www.wikidata.org/entity/Q1392744</j.0:identifier>
+    <rdf:type rdf:resource="http://schema.org/Movie"/>
+  </rdf:Description>
+</rdf:RDF>
