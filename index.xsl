@@ -39,8 +39,8 @@
 
 				<footer>
 					<address>
-						Find me on <a href="https://androiddev.social/@veyndan">Mastodon</a>, <a href="https://twitter.com/veyndan">Twitter</a>, and <a href="https://github.com/veyndan">GitHub</a>.
-						To get in touch, here's my <a href="mailto:{root/rdf:RDF/schema:Person/schema:email}">email</a>.
+						Find me on <a href="https://androiddev.social/@veyndan" rel="me">Mastodon</a>, <a href="https://twitter.com/veyndan" rel="me">Twitter</a>, and <a href="https://github.com/veyndan" rel="me">GitHub</a>.
+						To get in touch, here's my <a href="mailto:{root/rdf:RDF/schema:Person/schema:email}" rel="me">email</a>.
 					</address>
 				</footer>
 
