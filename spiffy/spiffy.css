@@ -1,6 +1,7 @@
 :root {
 	--color: hsl(0 0% 10%);
 	--background-color: white;
+	--content-width-normal: min(53ch, calc(100% - 2.8rem));
 }
 
 html {
@@ -20,7 +21,7 @@ body {
 article {
 	display: grid;
 	max-inline-size: 48rem;
-	grid-template-columns: 1fr min(53ch, calc(100% - 2.8rem)) 1fr;
+	grid-template-columns: 1fr var(--content-width-normal) 1fr;
 	grid-column-gap: 1.4rem;
 }
 
@@ -83,13 +84,13 @@ main + footer {
 }
 
 footer {
-	text-align: center;
-	font-style: normal;
-	font-size: .8rem;
+	width: var(--content-width-normal);
 }
 
 address {
+	text-align: center;
 	font-style: normal;
+	font-size: .8rem;
 }
 
 .underline {
