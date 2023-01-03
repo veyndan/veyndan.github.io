@@ -80,7 +80,7 @@ ul {
 }
 
 main + footer {
-	margin-block: 4rem;
+	margin-block: 3.2rem 1.2rem;
 }
 
 footer {
