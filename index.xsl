@@ -22,7 +22,7 @@
 							<xsl:value-of select="root/description"/>
 						</p>
 						<img src="profile.webp" width="1613" height="1210" alt="Me wearing sunglasses and a hoodie like a cape."/> <!-- convert profile.heic -resize 40% profile.webp-->
-						<section>
+						<article>
 							<h2>Projects</h2>
 							<p>
 								Ranked based on dearness to my heart,
@@ -33,7 +33,7 @@
 									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
 								</xsl:for-each>
 							</ul>
-						</section>
+						</article>
 					</article>
 				</main>
 
