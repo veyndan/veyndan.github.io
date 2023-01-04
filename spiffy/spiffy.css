@@ -1,6 +1,7 @@
 :root {
 	--color: hsl(0 0% 10%);
 	--background-color: white;
+	--alt-background-color: #00000010;
 	--content-width-normal: min(53ch, calc(100% - 2.8rem));
 }
 
@@ -68,11 +69,20 @@ h6 {
 	margin-block: 2em .6em;
 }
 
+img:before {
+	padding-inline: 1.4rem;
+}
+
 img {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 	object-fit: contain;
 	block-size: auto;
 	max-inline-size: 100%;
 	margin-block: 2.4rem;
+	font-style: italic;
+	background: var(--alt-background-color);
 }
 
 ul {
@@ -107,6 +117,7 @@ address {
 	:root {
 		--color: snow;
 		--background-color: hsl(0 0% 10%);
+		--alt-background-color: #FFFFFF10;
 	}
 
 	body a {
