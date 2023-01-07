@@ -105,7 +105,7 @@ address {
 		--background-color: hsl(0 0% 10%);
 	}
 
-	body a {
+	a {
 		color: #809fff;
 	}
 }
