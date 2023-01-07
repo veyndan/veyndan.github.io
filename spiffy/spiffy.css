@@ -1,7 +1,8 @@
 :root {
-	--color: hsl(0 0% 10%);
+	/* TODO Use relative colors */
+	--color-hsl: 0 0% 10%;
+	--color: hsl(var(--color-hsl));
 	--background-color: white;
-	--alt-background-color: #00000010;
 	--content-width-normal: min(53ch, calc(100% - 2.8rem));
 }
 
@@ -82,7 +83,7 @@ img {
 	max-inline-size: 100%;
 	margin-block: 2.4rem;
 	font-style: italic;
-	background: var(--alt-background-color);
+	background: hsl(var(--color-hsl) / 0.05);
 }
 
 ul {
@@ -115,9 +116,8 @@ address {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color: snow;
+		--color-hsl: 0 100% 99%;
 		--background-color: hsl(0 0% 10%);
-		--alt-background-color: #FFFFFF10;
 	}
 
 	body a {
