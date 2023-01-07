@@ -20,18 +20,18 @@ body {
 	align-items: center;
 }
 
-main > article {
+main {
 	display: grid;
 	max-inline-size: 48rem;
 	grid-template-columns: 1fr var(--content-width-normal) 1fr;
 	grid-column-gap: 1.4rem;
 }
 
-main > article > *, footer > * {
+main > *, footer > * {
 	grid-column: 2;
 }
 
-main > article > img, main > article > table {
+main > img, main > table {
 	width: 100%;
 	grid-column: 1 / -1;
 }

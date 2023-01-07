@@ -15,35 +15,33 @@
 			<body>
 
 				<main>
+					<h3>Ya found me.</h3>
+					<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span>.</h1>
+					<p>
+						<xsl:value-of select="root/description"/>
+					</p>
+					<img
+						srcset="
+							profile-640w.webp 640w,
+							profile-1024w.webp 1024w,
+							profile-1920w.webp 1920w,
+						"
+						src="profile-1920w.webp"
+						width="1920"
+						height="1440"
+						alt="Me wearing sunglasses and a hoodie like a cape."
+					/> <!-- convert profile.heic -resize 40% profile.webp-->
 					<article>
-						<h3>Ya found me.</h3>
-						<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span>.</h1>
+						<h2>Projects</h2>
 						<p>
-							<xsl:value-of select="root/description"/>
+							Ranked based on dearness to my heart,
+							from very dear to pretty dear.
 						</p>
-						<img
-							srcset="
-								profile-640w.webp 640w,
-								profile-1024w.webp 1024w,
-								profile-1920w.webp 1920w,
-							"
-							src="profile-1920w.webp"
-							width="1920"
-							height="1440"
-							alt="Me wearing sunglasses and a hoodie like a cape."
-						/> <!-- convert profile.heic -resize 40% profile.webp-->
-						<article>
-							<h2>Projects</h2>
-							<p>
-								Ranked based on dearness to my heart,
-								from very dear to pretty dear.
-							</p>
-							<ul>
-								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork">
-									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
-								</xsl:for-each>
-							</ul>
-						</article>
+						<ul>
+							<xsl:for-each select="root/rdf:RDF/schema:CreativeWork">
+								<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
+							</xsl:for-each>
+						</ul>
 					</article>
 				</main>
 
