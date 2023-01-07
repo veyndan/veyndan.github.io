@@ -41,31 +41,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2em;
 	margin-block: .5em .85em;
 }
 
-h2 {
-	font-size: 1.5em;
-}
-
 h3 {
-	font-size: 1.25em;
 	margin-block: 1.2em 1em;
 }
 
 h4 {
-	font-size: 1em;
 	margin-block: 1.5em .1em;
 }
 
 h5 {
-	font-size: .75em;
 	margin-block: 2em .6em;
 }
 
 h6 {
-	font-size: .75em;
 	font-weight: inherit;
 	margin-block: 2em .6em;
 }
