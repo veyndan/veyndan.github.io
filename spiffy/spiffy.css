@@ -3,7 +3,6 @@
 	--color-hsl: 0 0% 10%;
 	--color: hsl(var(--color-hsl));
 	--background-color: white;
-	--content-width-normal: min(53ch, calc(100% - 2.8rem));
 }
 
 html {
@@ -13,80 +12,45 @@ html {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+	/*
+	TODO Collapsible margins are important for content writing. Once margin-trim has browser support:
+	  - Re-implement with CSS grid (https://www.joshwcomeau.com/css/full-bleed/).
+	  - Restrict width using ch unit.
+	*/
+	max-inline-size: calc(min(40em + 1.6rem * 2, 100%));
+	margin-inline: auto;
 	padding-block: 2.4rem;
-	align-items: center;
 }
 
-main {
-	display: grid;
-	max-inline-size: calc(var(--content-width-normal) + 10rem);
-	grid-template-columns: 1fr var(--content-width-normal) 1fr;
-}
-
-main > *, footer > * {
-	grid-column: 2;
-}
-
-main > img, main > table {
-	width: 100%;
-	grid-column: 1 / -1;
-}
-
-h1 {
-	margin-block: .5em .85em;
-}
-
-h3 {
-	margin-block: 1.2em 1em;
-}
-
-h4 {
-	margin-block: 1.5em .1em;
-}
-
-h5 {
-	margin-block: 2em .6em;
-}
-
-h6 {
-	margin-block: 2em .6em;
+main > :not(img, table), footer > * {
+	padding-inline: 1.6rem;
+	margin-inline: auto;
+	width: calc(min(40rem, 100%));
 }
 
 img:before {
-	padding-inline: 1.4rem;
+	padding-inline: 1.6rem;
 }
 
 img {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	object-fit: contain;
 	block-size: auto;
 	max-inline-size: 100%;
-	margin-block: 2.4rem;
+	margin-block: 3.2rem;
 	font-style: italic;
 	background: hsl(var(--color-hsl) / 0.05);
 }
 
-ul {
-	padding-inline-start: 1.4rem;
-}
-
-main + footer {
-	margin-block: 3.2rem 1.2rem;
-}
-
 footer {
-	width: var(--content-width-normal);
+	margin-block: 3.2rem 1rem;
+	text-align: center;
+	font-size: .8rem;
 }
 
 address {
-	text-align: center;
 	font-style: normal;
-	font-size: .8rem;
 }
 
 .underline {
