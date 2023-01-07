@@ -24,7 +24,6 @@ main {
 	display: grid;
 	max-inline-size: calc(var(--content-width-normal) + 10rem);
 	grid-template-columns: 1fr var(--content-width-normal) 1fr;
-	grid-column-gap: 1.4rem;
 }
 
 main > *, footer > * {
