@@ -20,6 +20,7 @@ body {
 	max-inline-size: calc(min(40em + 1.6rem * 2, 100%));
 	margin-inline: auto;
 	padding-block: 2.4rem;
+	font-size: clamp(16px, .6rem + 1vw, 18px);
 }
 
 main > :not(img, table), footer > * {
@@ -55,12 +56,6 @@ address {
 
 .underline {
 	text-decoration: underline .2rem;
-}
-
-@media (min-width: 40rem) {
-	body {
-		font-size: large;
-	}
 }
 
 @media (prefers-color-scheme: dark) {
