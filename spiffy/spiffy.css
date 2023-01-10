@@ -26,7 +26,7 @@ body {
 main > :not(img, table), footer > * {
 	padding-inline: 1.6rem;
 	margin-inline: auto;
-	width: calc(min(40rem, 100%));
+	inline-size: calc(min(40rem, 100%));
 }
 
 img:before {
