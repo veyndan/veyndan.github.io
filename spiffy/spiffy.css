@@ -38,7 +38,7 @@ img {
 	justify-content: space-evenly;
 	align-items: center;
 	block-size: auto;
-	max-inline-size: 100%;
+	inline-size: 100%;
 	margin-block: 3.2rem;
 	font-style: italic;
 	background: hsl(var(--color-hsl) / 0.05);
