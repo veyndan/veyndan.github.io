@@ -1,14 +1,11 @@
 :root {
 	/* TODO Use relative colors */
-	--color-hsl: 0 0% 10%;
-	--color: hsl(var(--color-hsl));
-	--background-color: white;
+	--color-hsl: hsl(0 0% 10%);
+	color-scheme: light dark;
 }
 
 html {
 	line-height: 1.5;
-	background-color: var(--background-color);
-	color: var(--color);
 }
 
 body {
@@ -61,10 +58,5 @@ address {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-hsl: 0 100% 99%;
-		--background-color: hsl(0 0% 10%);
-	}
-
-	a {
-		color: #809fff;
 	}
 }
