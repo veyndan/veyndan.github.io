@@ -14,7 +14,7 @@ body {
 	  - Re-implement with CSS grid (https://www.joshwcomeau.com/css/full-bleed/).
 	  - Restrict width using ch unit.
 	*/
-	max-inline-size: calc(min(40em + 1.6rem * 2, 100%));
+	max-inline-size: min(40em + 1.6rem * 2, 100%);
 	margin-inline: auto;
 	padding-block: 2.4rem;
 	font-size: clamp(16px, .6rem + 1vw, 18px);
@@ -23,7 +23,7 @@ body {
 main > :not(img, table), footer > * {
 	padding-inline: 1.6rem;
 	margin-inline: auto;
-	inline-size: calc(min(40rem, 100%));
+	inline-size: min(40rem, 100%);
 }
 
 img:before {
