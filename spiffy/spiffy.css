@@ -4,6 +4,10 @@
 	color-scheme: light dark;
 }
 
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
 html {
 	line-height: 1.5;
 }
@@ -16,8 +20,10 @@ body {
 	*/
 	max-inline-size: min(40em + 1.6rem * 2, 100%);
 	margin-inline: auto;
+	margin-block: 0;
 	padding-block: 2.4rem;
 	font-size: clamp(16px, .6rem + 1vw, 18px);
+	font-family: system-ui;
 }
 
 main > :not(img, table), footer > * {
