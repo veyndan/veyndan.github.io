@@ -9,7 +9,6 @@
 				<meta name="author" content="{root/rdf:RDF/schema:Person/schema:name}"/>
 				<meta name="description" content="{root/description}"/>
 
-				<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/>
 				<link rel="stylesheet" href="spiffy/spiffy.css"/>
 			</head>
 			<body>
