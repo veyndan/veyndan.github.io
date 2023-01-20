@@ -9,6 +9,8 @@
 }
 
 html {
+	font-size: clamp(16px, .6rem + 1vw, 18px);
+	font-family: system-ui;
 	line-height: 1.5;
 }
 
@@ -18,22 +20,20 @@ body {
 	  - Re-implement with CSS grid (https://www.joshwcomeau.com/css/full-bleed/).
 	  - Restrict width using ch unit.
 	*/
-	max-inline-size: min(40em + 1.6rem * 2, 100%);
+	max-inline-size: min(40rem + 1.4rem * 2, 100%);
 	margin-inline: auto;
 	margin-block: 0;
 	padding-block: 2.4rem;
-	font-size: clamp(16px, .6rem + 1vw, 18px);
-	font-family: system-ui;
 }
 
 main > :not(img, table), footer > * {
-	padding-inline: 1.6rem;
+	padding-inline: 1.4rem;
 	margin-inline: auto;
-	inline-size: min(40rem, 100%);
+	inline-size: min(36rem, 100%);
 }
 
 img:before {
-	padding-inline: 1.6rem;
+	padding-inline: 1.4rem;
 }
 
 img {
@@ -42,15 +42,15 @@ img {
 	align-items: center;
 	block-size: auto;
 	inline-size: 100%;
-	margin-block: 3.2rem;
+	margin-block: 2.8rem;
 	font-style: italic;
 	background: hsl(var(--color-hsl) / 0.05);
 }
 
 footer {
-	margin-block: 3.2rem 1rem;
+	margin-block: 2.8rem .9rem;
 	text-align: center;
-	font-size: .8rem;
+	font-size: .7rem;
 }
 
 address {
@@ -58,7 +58,7 @@ address {
 }
 
 .underline {
-	text-decoration: underline .2rem;
+	text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
