@@ -29,7 +29,7 @@ main > :not(img, table), footer > * {
 	inline-size: min(36rem, 100%);
 }
 
-img:before {
+img::before {
 	padding-inline: 1.4rem;
 }
 
