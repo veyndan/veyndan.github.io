@@ -22,7 +22,7 @@ body {
 	*/
 	max-inline-size: min(40rem + 1.4rem * 2, 100%);
 	margin-inline: auto;
-	margin-block: 2.4rem;
+	margin-block: 3.6rem;
 }
 
 main > :not(img, table), footer > * {
