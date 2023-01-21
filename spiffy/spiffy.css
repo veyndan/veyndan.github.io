@@ -1,6 +1,6 @@
 :root {
 	/* TODO Use relative colors */
-	--color-hsl: hsl(0 0% 10%);
+	--color-hsl: 0 0% 10%;
 	color-scheme: light dark;
 }
 
