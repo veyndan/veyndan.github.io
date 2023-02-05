@@ -9,7 +9,7 @@
 }
 
 html {
-	font: clamp(16px, .6rem + 1vw, 18px)/1.5 system-ui;
+	font: clamp(16px, .6rem + 1vi, 18px)/1.5 system-ui;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 	*/
 	max-inline-size: min(40rem + 1.4rem * 2, 100%);
 	margin-inline: auto;
-	margin-block: clamp(2.4rem, 8vw, 3.6rem);
+	margin-block: clamp(2.4rem, 8vi, 3.6rem);
 }
 
 main > :not(img, table), footer > * {
