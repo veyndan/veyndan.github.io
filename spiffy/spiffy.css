@@ -23,10 +23,35 @@ body {
 	margin-block: clamp(2.4rem, 8vi, 3.6rem);
 }
 
-main > :not(img, table), footer > * {
+main > :not(img, table), :is(header, footer) {
 	padding-inline: 1.4rem;
 	margin-inline: auto;
 	inline-size: min(36rem, 100%);
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+/* TODO Remove. Used to mimic margin-collapse, but is overly specific to my layout. */
+header > *, header > nav > ul {
+	margin-block: 0;
+}
+
+header > nav {
+	flex: 1;
+	justify-items: center;
+	align-items: flex-end;
+}
+
+nav ul {
+	align-items: flex-end;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	list-style-type: none;
+	padding-inline-start: 0;
 }
 
 img::before {
