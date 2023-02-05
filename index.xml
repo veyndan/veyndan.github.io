@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<!--
+When applying just the CSS, it's like what we've got in Wikidata, just showing the data.
+
+You could even imagine it being like the underlying Solid Pod,
+and applying the XSL transformation, we're just getting a new view of the Solid Pod
+(but in this case it's a website).
+
+You can always have multiple XSL transformations for other things.
+If we don't just want the raw XML to be styled with CSS,
+perhaps a different transformation is showing all the user data in a Pod-esque way.
+-->
+<!--<?xml-stylesheet href="spiffy/spiffy.css"?>-->
 <root>
 
+	<!--
+	The beautiful part of all this is that I don't need to provide a UI to input all this data.
+	Instead, I can rely on 3rd party Solid compliant apps to input all the data.
+
+	* to input watched movies, I can rely on Media Kraken to input the stuff I've watched (or use Judge).
+	* A Solid compatible text editor could take blog posts that you've written and automatically publish it to the web (other
+	Solid compatible services could take these blog posts and publish them to other platforms, e.g., Mastodon, either in
+	full or as links to the website).
+
+	All this stuff is synced to Solid, and then I can take that, and I've got the index.xml.
+	-->
 	<rdf:RDF
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		xmlns:schema="http://schema.org/">
@@ -12,6 +35,12 @@
 			<schema:familyName rdf:datatype="https://schema.org/Text">Stuart</schema:familyName>
 			<schema:email rdf:datatype="https://schema.org/Text">veyndan@gmail.com</schema:email>
 		</schema:Person>
+
+		<schema:ImageObject rdf:nodeId="image">
+			<schema:representativeOfPage rdf:datatype="https://schema.org/Boolean">True</schema:representativeOfPage>
+			<schema:contentUrl rdf:datatype="https://schema.org/URL">../profile-640w.webp</schema:contentUrl>
+			<schema:width rdf:datatype=""></schema:width>
+		</schema:ImageObject>
 
 		<schema:CreativeWork>
 			<schema:name rdf:datatype="https://schema.org/Text">Flash</schema:name>
@@ -27,6 +56,65 @@
 			<schema:author rdf:nodeID="me"/>
 		</schema:CreativeWork>
 
+		<schema:Movie>
+			<schema:name rdf:datatype="https://schema.org/Text">The Godfather</schema:name>
+			<schema:review rdf:parseType="Resource">
+				<schema:dateCreated rdf:datatype="https://schema.org/Date">2023-01-03</schema:dateCreated>
+				<schema:rating rdf:parseType="Resource">
+					<schema:ratingValue rdf:datatype="https://schema.org/Number">9</schema:ratingValue>
+				</schema:rating>
+			</schema:review>
+		</schema:Movie>
+
+		<schema:Movie>
+			<schema:name rdf:datatype="https://schema.org/Text">Community</schema:name>
+			<schema:review rdf:parseType="Resource">
+				<schema:dateCreated rdf:datatype="https://schema.org/Date">2023-01-01</schema:dateCreated>
+				<schema:rating rdf:parseType="Resource">
+					<schema:ratingValue rdf:datatype="https://schema.org/Number">8</schema:ratingValue>
+				</schema:rating>
+			</schema:review>
+		</schema:Movie>
+
+		<schema:Movie>
+			<schema:name rdf:datatype="https://schema.org/Text">Wadjda</schema:name>
+			<schema:review rdf:parseType="Resource">
+				<schema:dateCreated rdf:datatype="https://schema.org/Date">2022-12-27</schema:dateCreated>
+				<schema:rating rdf:parseType="Resource">
+					<schema:ratingValue rdf:datatype="https://schema.org/Number">10</schema:ratingValue>
+				</schema:rating>
+			</schema:review>
+		</schema:Movie>
+
+		<schema:Movie>
+			<schema:name rdf:datatype="https://schema.org/Text">Lola</schema:name>
+			<schema:review rdf:parseType="Resource">
+				<schema:dateCreated rdf:datatype="https://schema.org/Date">2022-12-14</schema:dateCreated>
+				<schema:rating rdf:parseType="Resource">
+					<schema:ratingValue rdf:datatype="https://schema.org/Number">8</schema:ratingValue>
+				</schema:rating>
+			</schema:review>
+		</schema:Movie>
+
+		<schema:Movie>
+			<schema:name rdf:datatype="https://schema.org/Text">Silvia Prieto</schema:name>
+			<schema:review rdf:parseType="Resource">
+				<schema:dateCreated rdf:datatype="https://schema.org/Date">2022-12-03</schema:dateCreated>
+				<schema:rating rdf:parseType="Resource">
+					<schema:ratingValue rdf:datatype="https://schema.org/Number">7</schema:ratingValue>
+				</schema:rating>
+			</schema:review>
+		</schema:Movie>
+
+		<schema:WebPage>
+			<description>
+				Passionate programmer.
+				Film enthusiast.
+				Constantly lost in thought.
+			</description>
+			<schema:primaryImageOfPage rdf:nodeId="image"/>
+			<schema:relatedLink rdf:datatype="https://schema.org/URL">https://androiddev.social/@veyndan</schema:relatedLink>
+		</schema:WebPage>
 	</rdf:RDF>
 
 	<description>

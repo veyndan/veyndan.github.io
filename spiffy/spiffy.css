@@ -1,3 +1,56 @@
+@namespace rdf url(http://www.w3.org/1999/02/22-rdf-syntax-ns#);
+@namespace schema url(http://schema.org/);
+
+
+/*
+Practical steps to getting the website builder made with Solid out there:
+
+1. Open source spiffy.
+
+All the stuff with the XML and XSLT is independent of spiffy.
+You don't need to use those technologies to have this as a classless css library.
+I can continue to work on it obviously,
+but do the whole shebang of writing up a README and announcing it on Twitter/Mastodon.
+
+This seems like the natural next step, as I'm deep in CSS and it'll be nice to have a final product as a result of that.
+
+2. Open source the XSLT template to create my website
+
+Write up README.
+The selling point is that it can display stuff marked up in https://schema.org/ as a fully fledged website.
+It's kind of the opposite of what a lot of people think,
+which is that you already have a website and then you add schema.org stuff to it.
+With this, you start with the schema.org stuff and create a website.
+Write up a README for this.
+Announcing it on Twitter/Mastodon seems weird, but it doesn't matter if no one really looks at it.
+It doesn't seem clear what the benefit of it is initially, but based on the write up a few lines above, it hopefully should be clearer.
+
+3. Hook it up with Solid and make the website builder
+
+Open source. Write README. Announcement.
+
+4+. Create Solid apps that help add data to your Solid pod that can the ben used for the Solid website builder
+
+Try to use existing apps out there as much as possible.
+I want to use Media Kraken to input my movies.
+I want a photo album app (and hopefully one exists, otherwise that's something I'll need to create).
+
+5. Profit?
+
+a. Quit job.
+b. Host websites on my own service where I charge a small fee
+	i. Provide a DNS?
+	ii. Cheap hosting fees (cheaper than Wordpress for personal use).
+c. Do contract work:
+- helping companies set up this Solid powered website builder.
+- helping companies migrate existing setup to Solid powered website builder.
+- have bounty on issues if they want them fixed earlier than scheduled.
+- making templates by request. They can either be given as proprietary templates or open source ones.
+
+Have my profit completely transparent so people know what I'm making.
+Potentially pay people to help improve the open source project (grants, full-time, part-time).
+*/
+
 :root {
 	/* TODO Use relative colors */
 	--color-hsl: 0 0% 10%;
@@ -8,8 +61,27 @@
 	box-sizing: border-box;
 }
 
+[contentEditable=true]:empty:before {
+	content: attr(placeholder);
+	opacity: 0.6;
+}
+
+/* What's the practical difference between styling the html and body? I think setting the background-color is different. */
 html {
+	/* MDN recommends this line-height https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#accessibility_concerns*/
+	/* It could be interesting to follow all its advice in the linked document (WCAG 2.1) */
+	/* See if anyone's done that already on GitHub*/
 	font: clamp(16px, .6rem + 1vi, 18px)/1.5 system-ui;
+	/*font: calc(clamp(16px, .6rem + 1vi, 18px) * 2)/1.5 system-ui;*/
+	/*writing-mode: vertical-rl;*/
+}
+
+rdf|RDF {
+	background: orange;
+}
+
+schema|givenName {
+	font-weight: bold;
 }
 
 body {
@@ -29,15 +101,37 @@ main > :not(img, table), footer > * {
 	inline-size: min(36rem, 100%);
 }
 
+:where(img, table) {
+	inline-size: 100%;
+}
+
+img {
+	block-size: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:where(th, td):not(:first-child):not(:last-child) {
+	padding-inline: 1rem;
+	padding-block: .4rem;
+}
+
+:is(td:nth-child(2), td:nth-child(3)) {
+	text-align: center;
+}
+
 img::before {
 	padding-inline: 1.4rem;
 }
 
-img {
+main > img {
+	filter: brightness(1.1) saturate(1.1);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	block-size: auto;
 	max-inline-size: 100%;
 	margin-block: 2.8rem;
 	font-style: italic;
@@ -51,7 +145,7 @@ footer {
 }
 
 address {
-	font-style: normal;
+	font-style: unset;
 }
 
 .underline {
@@ -62,4 +156,23 @@ address {
 	:root {
 		--color-hsl: 0 100% 99%;
 	}
+}
+
+.justified-gallery {
+	--min-size: 8rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justified-gallery > img {
+	margin: 2px;
+	flex-grow: calc(var(--width) * 100 / var(--height));
+	flex-basis: calc(var(--width) * var(--min-size) / var(--height));
+}
+
+.justified-gallery::after {
+	content: '';
+	margin: 2px;
+	flex-grow: 999999999;
+	flex-basis: var(--min-size);
 }
