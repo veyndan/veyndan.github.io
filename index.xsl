@@ -42,11 +42,22 @@
 							Ranked based on dearness to my heart,
 							from very dear to pretty dear.
 						</p>
-						<ul>
-							<xsl:for-each select="root/rdf:RDF/schema:CreativeWork">
-								<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
-							</xsl:for-each>
-						</ul>
+						<section>
+							<h5>Authored</h5>
+							<ul>
+								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork[schema:author]">
+									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
+								</xsl:for-each>
+							</ul>
+						</section>
+						<section>
+							<h5>Contributed</h5>
+							<ul>
+								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork[not(schema:author)]">
+									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
+								</xsl:for-each>
+							</ul>
+						</section>
 					</article>
 				</main>
 
