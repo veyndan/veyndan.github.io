@@ -19,6 +19,16 @@
 			</head>
 			<body>
 
+<!--			<header>-->
+<!--				<nav>-->
+<!--					<ul>-->
+<!--						<li>Projects</li>-->
+<!--						<li>Musings</li>-->
+<!--						<li>Drafts (use this terminology instead of Musings???)</li>-->
+<!--					</ul>-->
+<!--				</nav>-->
+<!--			</header>-->
+
 				<main>
 					<h3>Ya found me.</h3>
 					<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span>.</h1>
@@ -58,6 +68,9 @@
 								</xsl:for-each>
 							</ul>
 						</section>
+<!--		        <section>-->
+<!--		            <h2>Drafts</h2>-->
+<!--		        </section>-->
 					</article>
 					<article>
 						<h2>Awards</h2>
