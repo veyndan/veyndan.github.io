@@ -1,0 +1,9 @@
+PREFIX : <https://www.veyndan.com/bookmark/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+:justUseEmail wdt:P31 wd:Q30849 ;
+    rdfs:label "Just Use Email" ;
+    wdt:P856 <https://justuseemail.com/> ;
+    wdt:P407 wd:Q1860 .

@@ -60,6 +60,17 @@ img {
     height: auto;
 }
 
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-inline: 0;
+}
+
+nav > ul > li:after {
+    content: "\00a0\00a0\00a0";
+}
+
 main + footer {
     margin-block: 4rem;
 }
