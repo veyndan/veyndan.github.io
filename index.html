@@ -2,30 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Veyndan Stuart</title>
 
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm.min.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="node_modules/awsm.css/dist/awsm_theme_black.min.css" media="(prefers-color-scheme: dark)">
+
+    <style>
+        .logo:any-link {
+            display: inline-block;
+            text-decoration: inherit;
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
 
-<div id="container">
-    <div>
-        <h1 id="name">Veyndan Stuart</h1>
-        <hr>
-        <p>Computer Science Master's student at University of Bristol.</p>
-        <ul class="list-inline">
-            <li>
-                <a href="mailto:veyndan@gmail.com">veyndan@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://github.com/veyndan">GitHub</a>
-            </li>
+<header>
+    <a href="" class="logo">
+        <h1>Veyndan</h1>
+        <p>My little corner of the Internet.</p>
+    </a>
+    <nav>
+        <ul>
+            <li><span aria-current="page">Home</span></li>
+            <li><a href="/projects">Projects</a></li>
+            <!--Note dump, brainstorm, ideas, musings, thoughts, brain dump, data dump-->
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/ideas">Ideas</a></li>
         </ul>
-    </div>
-</div>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Hi I'm Veyndan Stuart.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet maximus egestas. Aliquam et convallis mauris. Cras congue vestibulum vulputate. Sed varius turpis risus, bibendum volutpat magna lobortis hendrerit.</p>
+        <p>Curabitur in imperdiet nisl. Vestibulum eu mi at lorem elementum iaculis. Nam ut diam id risus sagittis suscipit sit amet at velit. Curabitur nec posuere massa, at facilisis nisi. Aliquam laoreet iaculis tincidunt.</p>
+        <img src="profile.jpg">
+    </article>
+</main>
+
+<footer>
+    <p>Find me on <a href="https://twitter.com/veyndan">Twitter</a> and <a href="https://github.com/veyndan">GitHub</a>. To get in touch, here's my <a href="mailto:veyndan@gmail.com">email</a>.</p>
+</footer>
 
 </body>
 </html>
