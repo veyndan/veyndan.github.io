@@ -26,14 +26,7 @@
 						<xsl:value-of select="root/description"/>
 					</p>
 					<img
-						srcset="
-							profile-640w.webp 640w,
-							profile-1024w.webp 1024w,
-							profile-1920w.webp 1920w,
-						"
-						src="profile-1920w.webp"
-						width="1920"
-						height="1440"
+						src="IMG_3333.png"
 						alt="Me wearing sunglasses and a hoodie like a cape."
 					/> <!-- convert profile.heic -resize 40% profile.webp-->
 					<article>
