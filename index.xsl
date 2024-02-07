@@ -14,6 +14,16 @@
 			</head>
 			<body>
 
+<!--			<header>-->
+<!--				<nav>-->
+<!--					<ul>-->
+<!--						<li>Projects</li>-->
+<!--						<li>Musings</li>-->
+<!--						<li>Drafts (use this terminology instead of Musings???)</li>-->
+<!--					</ul>-->
+<!--				</nav>-->
+<!--			</header>-->
+
 				<main>
 					<article>
 						<h3>Ya found me.</h3>
@@ -34,6 +44,9 @@
 								</xsl:for-each>
 							</ul>
 						</section>
+<!--		        <section>-->
+<!--		            <h2>Drafts</h2>-->
+<!--		        </section>-->
 					</article>
 				</main>
 

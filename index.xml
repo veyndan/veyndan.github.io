@@ -27,6 +27,16 @@
 			<schema:author rdf:nodeID="me"/>
 		</schema:CreativeWork>
 
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Spiffy</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://css-tricks.com/no-class-css-frameworks/</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A (mostly) classless CSS framework.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+<!--			It's "mostly" classless as I don't want to abuse HTML semantics just to be classless.-->
+<!--					For example, I'm not using the <u> tag for underline, as MDN explicitly says that that's not its purpose.-->
+<!--					https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u-->
+		</schema:CreativeWork>
+
 	</rdf:RDF>
 
 	<description>
