@@ -1,0 +1,3 @@
+[submodule "spiffy"]
+	path = spiffy
+	url = https://github.com/veyndan/spiffy
