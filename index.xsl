@@ -59,6 +59,14 @@
 							</ul>
 						</section>
 					</article>
+					<article>
+						<h2>Awards</h2>
+						<ul>
+							<li>
+								<p>A winner of the <a href="https://opensource.googleblog.com/2023/12/google-open-source-peer-bonus-program-announces-second-group-of-2023-winners.html">2023 Google Open Source Peer Bonus Program</a>.</p>
+							</li>
+						</ul>
+					</article>
 				</main>
 
 				<footer>
