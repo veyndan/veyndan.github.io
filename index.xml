@@ -21,6 +21,13 @@
 		</schema:CreativeWork>
 
 		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Spiffy</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/veyndan/spiffy</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A (mostly) classless CSS framework.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
 			<schema:name rdf:datatype="https://schema.org/Text">Multiplatform Paging</schema:name>
 			<schema:url rdf:datatype="https://schema.org/URL">https://code.cash.app/announcing-multiplatform-paging</schema:url>
 			<schema:description rdf:datatype="https://schema.org/Text">A library that packages AndroidX Paging for Kotlin/Multiplatform.</schema:description>
