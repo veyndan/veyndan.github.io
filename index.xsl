@@ -71,7 +71,7 @@
 
 				<footer>
 					<address>
-						Find me on <a href="https://androiddev.social/@veyndan" rel="me">Mastodon</a>, <a href="https://twitter.com/veyndan" rel="me">Twitter</a>, and <a href="https://github.com/veyndan" rel="me">GitHub</a>.
+						Find me on <a href="https://androiddev.social/@veyndan" rel="me">Mastodon</a> and <a href="https://github.com/veyndan" rel="me">GitHub</a>.
 						To get in touch, <a href="mailto:{root/rdf:RDF/schema:Person/schema:email}" rel="me">email me</a> or <a href="https://matrix.to/#/@veyndan:matrix.org">message me on Matrix</a>.
 					</address>
 				</footer>
