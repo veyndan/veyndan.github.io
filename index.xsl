@@ -21,7 +21,8 @@
 
 				<main>
 					<h3>Ya found me.</h3>
-					<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span>.</h1>
+					<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span><sup style="font-size: 1.2rem;"> 1</sup>.</h1>
+					<p style="margin-top: -1rem;margin-bottom: 1.5rem;font-size: .75rem;font-style: italic;"><sup>1 </sup><a href="pronunciation.mp3">How do you pronounce that?</a></p>
 					<p>
 						<xsl:value-of select="root/description"/>
 					</p>
