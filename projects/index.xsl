@@ -22,30 +22,44 @@
 				<header>
 					<nav>
 						<ul>
-							<li><a href="/index.xml" aria-current="page">Home</a></li>
-							<li><a href="/projects/index.xml">Projects</a></li>
+							<li><a href="/index.xml">Home</a></li>
+							<li><a href="/projects/index.xml" aria-current="page">Projects</a></li>
 						</ul>
 					</nav>
 				</header>
 
 				<main>
-					<h3>Ya found me.</h3>
-					<h1>Hi I'm <span class="underline">️<xsl:value-of select="root/rdf:RDF/schema:Person/schema:name"/></span><sup style="font-size: 1.2rem;"> 1</sup>.</h1>
-					<p style="margin-top: -1rem;margin-bottom: 1.5rem;font-size: .75rem;font-style: italic;"><sup>1 </sup><a href="/pronunciation.mp3">How do you pronounce that?</a></p>
-					<p>
-						<xsl:value-of select="root/description"/>
-					</p>
-					<img
-						srcset="
-							profile-640w.webp 640w,
-							profile-1024w.webp 1024w,
-							profile-1920w.webp 1920w,
-						"
-						src="profile-1920w.webp"
-						width="1920"
-						height="1440"
-						alt="Me wearing sunglasses and a hoodie like a cape."
-					/> <!-- convert profile.heic -resize 40% profile.webp-->
+					<article>
+						<h1>Projects</h1>
+						<p>
+							Ranked based on dearness to my heart,
+							from very dear to pretty dear.
+						</p>
+						<section>
+							<h5>Authored</h5>
+							<ul>
+								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork[schema:author]">
+									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
+								</xsl:for-each>
+							</ul>
+						</section>
+						<section>
+							<h5>Contributed</h5>
+							<ul>
+								<xsl:for-each select="root/rdf:RDF/schema:CreativeWork[not(schema:author)]">
+									<li><a href="{schema:url}" style="font-weight: bold"><xsl:value-of select="schema:name"/></a> – <xsl:value-of select="schema:description"/></li>
+								</xsl:for-each>
+							</ul>
+						</section>
+					</article>
+					<article>
+						<h2>Awards</h2>
+						<ul>
+							<li>
+								<p>A winner of the <a href="https://opensource.googleblog.com/2023/12/google-open-source-peer-bonus-program-announces-second-group-of-2023-winners.html">2023 Google Open Source Peer Bonus Program</a> for <a href="https://developer.android.com/jetpack/androidx/releases/paging#3.3.0-alpha02">helping bring</a> Kotlin/Multiplatform compatibility to the AndroidX Paging library.</p>
+							</li>
+						</ul>
+					</article>
 				</main>
 
 				<footer>

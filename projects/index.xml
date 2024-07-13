@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<root>
+
+	<rdf:RDF
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:schema="http://schema.org/">
+
+		<schema:Person rdf:nodeId="me">
+			<schema:name rdf:datatype="https://schema.org/Text">Veyndan Stuart</schema:name>
+			<schema:givenName rdf:datatype="https://schema.org/Text">Veyndan</schema:givenName>
+			<schema:familyName rdf:datatype="https://schema.org/Text">Stuart</schema:familyName>
+			<schema:email rdf:datatype="https://schema.org/Text">veyndan@gmail.com</schema:email>
+		</schema:Person>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Flash</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/veyndan/flash</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">An Anki add-on that can autofill fields when creating notes.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Spiffy</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/veyndan/spiffy</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A (mostly) classless CSS framework.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Multiplatform Paging</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://code.cash.app/announcing-multiplatform-paging</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A library that packages AndroidX Paging for Kotlin/Multiplatform.</schema:description>
+			<schema:author rdf:nodeID="me"/>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">SQLDelight</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/cashapp/sqldelight</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A library that generates typesafe Kotlin APIs from SQL.</schema:description>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Redwood</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/cashapp/redwood</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A multiplatform reactive UI library for Android, iOS, and web using Kotlin and Jetpack Compose.</schema:description>
+		</schema:CreativeWork>
+
+		<schema:CreativeWork>
+			<schema:name rdf:datatype="https://schema.org/Text">Litics</schema:name>
+			<schema:url rdf:datatype="https://schema.org/URL">https://github.com/deliveryhero/litics</schema:url>
+			<schema:description rdf:datatype="https://schema.org/Text">A library that generates Kotlin/Multiplatform APIs from tracking event definitions.</schema:description>
+		</schema:CreativeWork>
+
+	</rdf:RDF>
+
+	<description>
+		Passionate programmer.
+		Film enthusiast.
+		Constantly lost in thought.
+	</description>
+
+</root>
