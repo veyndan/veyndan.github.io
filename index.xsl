@@ -58,6 +58,25 @@
 								</xsl:for-each>
 							</ul>
 						</section>
+						<section>
+							<h5>TODO</h5>
+							<p>
+								Projects that I think would be cool if they existed.
+							</p>
+							<p>
+								If you know of an implementation for one of these ideas, then please tell me about it!
+								If you want to steal one of these ideas, then please be my guest!
+								If you want to work on one of these ideas with me, then please contact me and let's discuss!
+							</p>
+							<ul>
+								<li>
+									<span style="font-weight: bold">Judge</span> – A browser plugin that 
+								</li>
+								<li>
+									<span style="font-weight: bold"></span> – 
+								</li>
+							</ul>
+						</section>
 					</article>
 					<article>
 						<h2>Awards</h2>
