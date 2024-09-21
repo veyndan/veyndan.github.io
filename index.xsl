@@ -28,11 +28,11 @@
 					</p>
 					<img
 						srcset="
-							profile-640w.webp 640w,
-							profile-1024w.webp 1024w,
-							profile-1920w.webp 1920w,
+							profile1-640w.webp 640w,
+							profile1-1024w.webp 1024w,
+							profile1-1920w.webp 1920w,
 						"
-						src="profile-1920w.webp"
+						src="profile1-1920w.webp"
 						width="1920"
 						height="1440"
 						alt="Me wearing sunglasses and a hoodie like a cape."
