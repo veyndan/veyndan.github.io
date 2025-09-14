@@ -1,0 +1,31 @@
+header > nav > ul {
+	align-items: center;
+
+	& > li > a[href="/index.xml"] {
+		display: flex;
+		align-items: center;
+		gap: .75rem;
+		position: relative;
+		color: inherit;
+		text-decoration: inherit;
+
+		img {
+			inline-size: 2.75rem;
+			border-radius: .25rem;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+
+			span:first-child {
+				font-weight: bold;
+				font-size: 1.2rem;
+			}
+
+			span:last-child {
+				font-size: .8rem;
+			}
+		}
+	}
+}

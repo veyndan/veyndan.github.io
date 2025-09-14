@@ -11,6 +11,15 @@
 			<schema:givenName rdf:datatype="https://schema.org/Text">Veyndan</schema:givenName>
 			<schema:familyName rdf:datatype="https://schema.org/Text">Stuart</schema:familyName>
 			<schema:email rdf:datatype="https://schema.org/Text">veyndan@gmail.com</schema:email>
+			<schema:image rdf:datatype="https://schema.org/ImageObject">
+				<schema:contentUrl rdf:datatype="https://schema.org/URL">/profile.jpg</schema:contentUrl>
+				<schema:width rdf:datatype="https://schema.org/QuantitativeValue">
+					<schema:value rdf:datatype="https://schema.org/Number">460</schema:value>
+				</schema:width>
+				<schema:height rdf:datatype="https://schema.org/QuantitativeValue">
+					<schema:value rdf:datatype="https://schema.org/Number">460</schema:value>
+				</schema:height>
+			</schema:image>
 		</schema:Person>
 
 		<schema:CreativeWork>

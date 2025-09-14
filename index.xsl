@@ -16,33 +16,27 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
 				<link rel="manifest" href="manifest.webmanifest"/>
 				<link rel="stylesheet" href="/spiffy/spiffy.css"/>
-
-				<style>
-					header > nav > ul > li > a[href="/index.xml"] {
-						position: relative;
-						color: inherit;
-						text-decoration: inherit;
-						text-transform: lowercase;
-						font-weight: bold;
-						background-image: linear-gradient(
-							to bottom right,
-							rgb(214 2 112 / .6),
-							37%,
-							rgb(155 79 150 / .6) 43%,
-							63%,
-							rgb(0 56 168 / .6) 75%
-						);
-						border-radius: 1em 0;
-						padding: .5rem 1rem;
-					}
-				</style>
+				<link rel="stylesheet" href="/index.css"/>
 			</head>
 			<body>
 
 				<header>
 					<nav>
 						<ul>
-							<li><a href="/index.xml" aria-current="page">Veyndan</a></li>
+							<li>
+								<a href="/index.xml" aria-current="page">
+									<img
+										src="{root/rdf:RDF/schema:Person/schema:image/schema:contentUrl}"
+										width="{root/rdf:RDF/schema:Person/schema:image/schema:width/schema:value}"
+										height="{root/rdf:RDF/schema:Person/schema:image/schema:width/schema:value}"
+										alt=""
+									/>
+									<div>
+										<span>Veyndan 🌱🏳️‍🌈</span>
+										<span>My little corner of the internet.</span>
+									</div>
+								</a>
+							</li>
 							<li><a href="/projects/index.xml">Projects</a></li>
 						</ul>
 					</nav>
@@ -56,11 +50,11 @@
 					</p>
 					<img
 						srcset="
-							profile-640w.webp 640w,
-							profile-1024w.webp 1024w,
-							profile-1920w.webp 1920w,
+							hoodie-640w.webp 640w,
+							hoodie-1024w.webp 1024w,
+							hoodie-1920w.webp 1920w,
 						"
-						src="profile-1920w.webp"
+						src="hoodie-1920w.webp"
 						width="1920"
 						height="1440"
 						alt="Me wearing sunglasses and a hoodie like a cape."
